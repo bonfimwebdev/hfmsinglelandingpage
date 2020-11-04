@@ -1,0 +1,11 @@
+/*Telas pequenas*/
+@media screen and (min-width: 280px) and (max-width: 767px) {
+    
+    /*Corpo geral*/
+    
+}
+
+/*Telas grandes*/
+@media (min-width: 768px) {
+
+}
