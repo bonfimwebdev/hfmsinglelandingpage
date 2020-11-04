@@ -1,11 +1,22 @@
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+}
+
 /*Telas pequenas*/
 @media screen and (min-width: 280px) and (max-width: 767px) {
     
     /*Corpo geral*/
-    
+    body {
+        background-image: url(./img/bg-mobile.svg);
+    }
 }
 
 /*Telas grandes*/
 @media (min-width: 768px) {
 
+    /*Corpo geral*/
+    body {
+        background-image: url(./img/bg-desktop.svg);
+    }
 }
