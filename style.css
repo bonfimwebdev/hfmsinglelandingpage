@@ -1,22 +1,100 @@
+/************CONFIGS GERAIS************/
+
+/*Importação fonte Poppins 400*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*Importação fonte Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*Cor e repetição de BG*/
 body {
     background-color: hsl(257, 40%, 49%);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-/*Telas pequenas*/
+/*Fontes*/
+h1, p {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+/*Botão de registro*/
+.register-button {
+    font-family: "Open Sans";
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+/*Icones do footer*/
+.social-icon {
+    filter: invert(1);
+}
+
+/************TELAS PEQUENAS************/
 @media screen and (min-width: 280px) and (max-width: 767px) {
-    
-    /*Corpo geral*/
-    body {
-        background-image: url(./img/bg-mobile.svg);
-    }
+/*Corpo geral*/
+body {
+    background-image: url(./img/bg-mobile.svg);
 }
 
-/*Telas grandes*/
+/*Logotipo da nav*/
+.logo {
+    height: 5vh;
+    margin: 20px;
+}
+
+/*Conteúdo da main*/
+.illustration-wrapper {
+    margin: auto;
+    width: 80vw;
+}
+
+.illustration {
+    width: 80vw;
+}
+
+.main-text {
+    margin: auto;
+    width: 90vw;
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.register-button {
+    margin: auto;
+}
+
+/*Texto do footer*/
+.footer-text {
+    padding: 10px;
+    font-size: 8px;
+    text-align: center;
+}
+
+/*Icones do footer*/
+.social-icon {
+    width: 30px;
+    margin: aut
+}
+
+}
+
+/************TELAS GRANDES************/
 @media (min-width: 768px) {
 
-    /*Corpo geral*/
-    body {
-        background-image: url(./img/bg-desktop.svg);
-    }
+/*Corpo geral*/
+body {
+    background-image: url(./img/bg-desktop.svg);
+}
 }
