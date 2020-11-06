@@ -24,15 +24,36 @@ h1, p {
     font-family: "Open Sans";
     background-color: #fff;
     color: hsl(257, 40%, 49%);
-    width: 200px;
+    width: 150px;
     height: 40px;
     border-radius: 50px;
     border: hsl(257, 40%, 49%)
 }
 
+/*Logotipo da nav*/
+.logo {
+    height: 5vh;
+    margin: 20px;
+}
+
+/*Texto do footer*/
+.footer-text {
+    padding: 10px;
+    font-size: 8px;
+    text-align: center;
+}
+
 /*Icones do footer*/
+.icons-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 40px 0 0;
+}
+
 .social-icon {
     filter: invert(1);
+    width: 30px;
+    margin: 10px;
 }
 
 /************TELAS PEQUENAS************/
@@ -40,12 +61,6 @@ h1, p {
 /*Corpo geral*/
 body {
     background-image: url(./img/bg-mobile.svg);
-}
-
-/*Logotipo da nav*/
-.logo {
-    height: 5vh;
-    margin: 20px;
 }
 
 /*Conteúdo da main*/
@@ -76,32 +91,51 @@ p {
     margin: auto;
 }
 
-/*Texto do footer*/
-.footer-text {
-    padding: 10px;
-    font-size: 8px;
-    text-align: center;
-}
-
-/*Icones do footer*/
-.icons-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
 .social-icon {
     width: 30px;
 }
 
-
 }
-
 /************TELAS GRANDES************/
 @media (min-width: 768px) {
 
 /*Corpo geral*/
 body {
     background-image: url(./img/bg-desktop.svg);
+}
+
+/*Logotipo da nav*/
+.logo {
+    height: 7vh;
+}
+
+/*Conteúdo da main*/
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.illustration-wrapper, .illustration {
+    width: 50vw;
+}
+
+.illustration-wrapper {
+    padding: 100px 50px 0 100px;
+}
+
+.main-text{
+    width: 30vw;
+}
+
+.main-text {
+    padding: 100px 100px 0 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 13px;
 }
 }
