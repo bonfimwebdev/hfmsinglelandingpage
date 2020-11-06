@@ -27,6 +27,7 @@ h1, p {
     width: 200px;
     height: 40px;
     border-radius: 50px;
+    border: hsl(257, 40%, 49%)
 }
 
 /*Icones do footer*/
@@ -83,10 +84,16 @@ p {
 }
 
 /*Icones do footer*/
+.icons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 .social-icon {
     width: 30px;
-    margin: aut
 }
+
 
 }
 
