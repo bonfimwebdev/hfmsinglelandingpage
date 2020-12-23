@@ -38,7 +38,7 @@ h1, p {
 
 /*Texto do footer*/
 .footer-text {
-    padding: 10px;
+    margin: 20px;
     font-size: 8px;
     text-align: center;
 }
@@ -47,13 +47,29 @@ h1, p {
 .icons-container {
     display: flex;
     justify-content: flex-end;
-    margin: 30px 40px 0 0;
+    /*margin: 30px 40px 0 0;*/
 }
 
 .social-icon {
     filter: invert(1);
     width: 30px;
     margin: 10px;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+footer {
+    margin: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /************TELAS PEQUENAS************/
@@ -64,23 +80,20 @@ body {
 }
 
 /*Conteúdo da main*/
-.illustration-wrapper {
-    margin: auto;
-    width: 80vw;
-}
-
-.illustration {
+.illustration-wrapper, .illustration {
+    margin: 20px auto;
     width: 80vw;
 }
 
 .main-text {
     margin: auto;
-    width: 90vw;
+    width: 80vw;
     text-align: center;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 p {
@@ -91,8 +104,24 @@ p {
     margin: auto;
 }
 
-.social-icon {
-    width: 30px;
+.icons-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+footer {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-text {
+    font-size: 8px;
+}
+
+footer a:active{
+    background-color: #e882e8;
+    color: #fff;
 }
 
 }
@@ -115,19 +144,23 @@ main {
     justify-content: space-between;
 }
 
+.register-button:hover, .footer-text a:hover{
+    background-color: #e882e8;
+    color: #fff;
+}
+
+
 .illustration-wrapper, .illustration {
     width: 50vw;
+    margin: 0 10px 0;
 }
 
 .illustration-wrapper {
     padding: 100px 50px 0 100px;
 }
 
-.main-text{
-    width: 30vw;
-}
-
 .main-text {
+    width: 30vw;
     padding: 100px 100px 0 0;
 }
 
@@ -138,4 +171,5 @@ h1 {
 p {
     font-size: 13px;
 }
+
 }
